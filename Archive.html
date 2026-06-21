@@ -4,6 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForgeNet Archive wiki</title>
+
+    <style>
+      {
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+        font-family:'segoe UI',sans-serif;
+      }
+      body {
+        background:#0f172a;
+        color:white;
+        display:flex;
+        height:100vh;
+      }
+      .sidebar {
+        width:280px
+         background:#1e293b
+        border-right:3px solid #334155;
+        padding:20px
+      }
+      .logo {
+        font-size:28px;
+        font-weight:bold;
+        margin-bottom:25px
+        text-align:center;
+      }
+      .sidebar button {
+        width:100%;
+        background:#334155;
+        color:white;
+        border:none;
+        padding:16px;
+        margin-bottom:10px;
+        border-radius:10px;
+        cursor:pointer;
+        font-size:16px
+        text-align:left;
+        transition:.2s;
+      }
+      .sidebar button:hover {
+        background:#475569
+      }
+      .sidebar button:active {
+        background:#2563eb
+      }
+      .content {
+        flex:1;
+        padding:30px;
+        overflow-y:auto;
+      }
+      .page {
+        display:none;
+      }
+      .page.active {
+        display:block;
+      }
+      .card {
+        background:#1e293b;
+        border:2px solid #334155;
+        border-radius:12px;
+        padding:20px
+        margin-bottom:20px;
+      }
+      .card h2 {
+        color:#60a5fa;
+        margin-bottom:10px
+      }
+      .command {
+        background:#0f172a
+        border-left:4px solid #3b82f6;
+        padding:12px;
+        margin-top:10px;
+        border-radius:6px;
+      }
+      .command strong {
+        color:#93c5fd;
+      }
+    </style>
   </head>
-  
+  <body>
+    <div class="sidebar">
+      <div class="logo">ForgeNet wiki</div>
+
+      <button class="active" onclick="showPage('home', this)"> home </button>
+          <button onclick="showPage('commands', this)"> Commands </button>
+    </div>
+
+    <div class="content">
+      <div id="home" class="page active">
+        <div class+"card">
+          <h2>Welcome</h2>
+          <p>Welcome to ForgeNet wiki. 
+            the official documentation for Luminescent network.</p>
+        </div>
+        
+  </body>
 </html>
